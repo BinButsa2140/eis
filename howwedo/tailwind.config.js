@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-bg' : "url('D:/My EIS website/eis/assets/sneaker background.webp')",
+      }
+    },
   },
   plugins: [],
 }
