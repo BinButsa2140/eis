@@ -1,15 +1,13 @@
-import Navbar from './sections/Navbar'
-import Hero from './sections/Hero'
-import AboutUs from './sections/AboutUs'
-import './App.css'
+import Landpage from "./sections/Landpage"
+
+Landpage
+
 
 function App() {
   
   return (
     <div className="">
-      <Navbar/>
-      <Hero/>
-      <AboutUs/>
+      <Landpage/>
     </div>
   )
 }
