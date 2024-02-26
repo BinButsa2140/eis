@@ -10,11 +10,13 @@ function Landpage() {
   return (
     <div className="">
       <Navbar/>
-      <Hero/>
-      <AboutUs/>
-      <Whyus/>
-        <Branding/>
-        <Pricing/>
+      <div className="">
+        <Hero/>
+        <AboutUs/>
+        <Whyus/>
+          <Branding/>
+          <Pricing/>
+      </div>
     </div>
   )
 }

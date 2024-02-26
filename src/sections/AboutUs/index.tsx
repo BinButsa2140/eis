@@ -2,7 +2,7 @@ import { data } from "../../contents/aboutus"
 import { herodata } from "../../contents/hero"
 export default function AboutUs() {
   return (
-    <div className='h-screen mt-10 grid grid-cols-[40%_60%] m-10'>
+    <div className='h-screen mt-10 mb-40 grid grid-cols-[40%_60%] mx-10 '>
         <div className="flex flex-col ">
           {data.map((data, index) => (
             <div key={index} className="mt-32">

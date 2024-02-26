@@ -2,14 +2,19 @@ import { strengthpoint } from "../../contents/strenghpoints"
 
 export default function Whyus() {
   return (
-    <div className='h-screen flex mt-10 mb-10'>
+    <div className='h-screen flex mt-10 mb-56 mx-20'>
         <div className=" flex flex-col h-full 
         w-full justify-center">
-            <h1 className='text-4xl font-extrabold 
-            my-5 uppercase text-Start ms-20'>
-                    Why <span className="">us</span>
-            </h1>
-            <div className="grid lg:grid-cols-3 gap-10 m-10">
+            <div className="my-10">
+                <h1 className='text-4xl font-serif font-bold
+                my-5 uppercase text-Start  w-2/3'>
+                        Trustworthy Authentication Services for Your Products
+                </h1>
+                <p className="">
+                    At Fluxxer, we offer a range of services to help you determine the authenticity of your handbags, fragrance, and shoes. Our team of professionals is dedicated to providing accurate and reliable authentication.
+                </p>
+            </div>
+            <div className="grid lg:grid-cols-3 gap-10">
             {strengthpoint.map((points, index)=>(
                 <div key={index} className="">
                     <div className=" p-10 bg-gray-800 rounded-lg transition-all duration-1000 ">
