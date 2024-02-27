@@ -72,7 +72,6 @@ const Hero = () => {
         }}
         >for quick legit check</motion.button>  
         
-        
         <motion.button onClick={alldeepfn} className='uppercase self-start text-gray-400 text-3xl font-semibold p-3 border-2 rounded-lg'
         initial={{
           x:0,
@@ -108,12 +107,12 @@ const Hero = () => {
           <h3 className='text-gray-400 self-center font-bold text-4xl text-start'>step 2 <br /><span className='uppercase text-gray-500 font-lg text-base'>Send us images of your items as requested via our email, such as the appearance, soles or size tag </span></h3>
           </div>
           <div className='flex'>
-            <h3 className='text-gray-400 self-center font-bold text-4xl text-start'>step 3 <br /><span className='uppercase text-gray-500 font-lg text-base'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
+            <h3 className='text-gray-400 self-center font-bold text-4xl text-start m-10'>step 3 <br /><span className='uppercase text-gray-500 font-lg text-base'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
             <img src={certi} className='w-[700px] h-[450px] mt-[200px] self-start' alt="" />
           </div>
         </motion.div>
 
-        <motion.div id='deeplegit' className=' scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-l p-6' 
+        <motion.div id='deeplegit' className=' scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-r p-6' 
         initial={{opacity: 0 , x: 200}} 
         animate={{
           opacity:deeplegit ? 1 : 0, 
@@ -125,12 +124,12 @@ const Hero = () => {
         }}
         >
           <div className='flex gap-[150px]'>
-          <img src={takeapic} className='w-[500px] h-[700px] block' />
           <h3 className='text-gray-400 self-center font-bold text-4xl text-start'>step 2 <br /><span className='uppercase text-gray-500 font-lg text-base'>Send us images of your items as requested via our email, such as the appearance, soles or size tag </span></h3>
+          <img src={takeapic} className='w-[500px] h-[700px] block' />
           </div>
           <div className='flex'>
-            <h3 className='text-gray-400 self-center font-bold text-4xl text-start'>step 3 <br /><span className='uppercase text-gray-500 font-lg text-base'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
             <img src={certi} className='w-[700px] h-[450px] mt-[200px] self-start' alt="" />
+            <h3 className='text-gray-400 self-center font-bold text-4xl text-start m-10'>step 3 <br /><span className='uppercase text-gray-500 font-lg text-base'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
           </div>
         </motion.div>
 
