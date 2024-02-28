@@ -43,7 +43,7 @@ const Hero = () => {
 
 
   return (
-    <div className='flex flex-wrap justify-center relative w-full h-[500px] top-[50px]'>
+    <div className='flex flex-wrap justify-center relative w-full h-[500px] top-[50px] scroll-smooth'>
         <h1 className='uppercase block text-4xl w-full text-center font-extrabold font-weight text-gray-200'>how it work</h1>
         <h2 className='uppercase text-gray-300 w-full text-center mt-14 font-bold text-2xl'>for quick legit check</h2>
         <img src={yourcategory}
@@ -65,7 +65,7 @@ const Hero = () => {
         animate={{
           rotate : quicklegit ? -90 : 0,
           x: quicklegit ? 15 : 0,
-          y: quicklegit ? 400 : 0
+          y: quicklegit ? 800 : 0
         }}
         transition={{
           duration: 1
@@ -80,7 +80,7 @@ const Hero = () => {
         animate={{
           rotate : deeplegit ? 90 : 0,
           x: deeplegit ? 100 : 0,
-          y: deeplegit ? 400 : 0
+          y: deeplegit ? 800 : 0
         }}
         transition={{
           duration: 1
@@ -88,7 +88,7 @@ const Hero = () => {
         >for deep legit check</motion.button>
         </div>
 
-        <motion.div id='quicklegit' className=' scroll-m-8 flex-col gap-[150px] absolute right-0 top-[220%] w-[60%] border-l p-6' 
+        <motion.div id='quicklegit' className=' bg-gray-800 scroll-m-8 flex-col gap-[150px] absolute right-0 top-[220%] w-[60%] border-l p-6' 
         initial={{
           opacity: 0, 
           x: 200
@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.div id='deeplegit' className=' scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-r p-6' 
+        <motion.div id='deeplegit' className=' bg-gray-800 opacity-0 scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-r p-6' 
         initial={{opacity: 0 , x: 200}} 
         animate={{
           opacity:deeplegit ? 1 : 0, 
