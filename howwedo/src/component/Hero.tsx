@@ -1,12 +1,18 @@
-import React, {useState} from 'react'
-import { yourcategory, takeapic, certi } from '.';
-import { BsArrowDownLeft,BsArrowDownRight } from "react-icons/bs";
-import { animate, easeOut, motion } from "framer-motion"
+import React, {useRef, useState} from 'react'
+import { yourcategory, takeapic, certi, hand2hand} from '.';
+import { animate, delay, easeOut, motion } from "framer-motion"
+import { SlArrowDown } from "react-icons/sl"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 const Hero = () => {
   const [quicklegit,setquicklegit] = useState(false)
   const [deeplegit,setdeeplegit] = useState(false)
   const [checkOP,setcheckOP] = useState(false)
+  const step3Ref1 = useRef<HTMLDivElement | null>(null)
+  const step3Ref2 = useRef<HTMLDivElement | null>(null)
+
+
+
 
   const handlequick = () => {
     setquicklegit(!quicklegit)
@@ -19,76 +25,125 @@ const Hero = () => {
   }
 
   const allquickfn = () => {
-    if (checkOP){
+    if (quicklegit && checkOP) {
+      handlequick();
+      handleOP();
+    }
+    else if (checkOP){
       handledeep();
       handlequick();
     }
-    else if (quicklegit || !checkOP) {
+    else{
       handlequick();
       handleOP();
     }
   }
 
   const alldeepfn = () => {
-    if (checkOP){
-      handlequick();
-      handledeep();
-    }
-    else if (deeplegit || !checkOP) {
+    if (deeplegit && checkOP) {
       handledeep();
       handleOP();
     }
+    else if (checkOP){
+      handledeep();
+      handlequick();
+    }
+    else{
+      handledeep();
+      handleOP();
+    }
+  }
 
+  const scroll = () => {
+    setTimeout(() => {
+      step3Ref2.current?.scrollIntoView({behavior : 'smooth'});
+    }, 20);
   }
 
 
   return (
-    <div className='flex flex-wrap justify-center relative w-full h-[500px] top-[50px] scroll-smooth'>
+    <div className='flex flex-wrap justify-center relative w-full h-[500px] top-[50px]'>
         <h1 className='uppercase block text-4xl w-full text-center font-extrabold font-weight text-gray-200'>how it work</h1>
         <h2 className='uppercase text-gray-300 w-full text-center mt-14 font-bold text-2xl'>for quick legit check</h2>
         <img src={yourcategory}
-        className='w-[260px] h-[400px] relative my-8 '/>
-        <h3 className='text-gray-400 font-bold text-3xl w-full text-center'>step 1</h3>
-        <button className='uppercase text-gray-500 mt-3 font-medium text-l w-full text-center m-0'>Select your item category from our category <br />sneaker clothes pants or toys</button>
-        <div className='flex items-center justify-center w-full gap-[20%]'>
-        <BsArrowDownLeft  color='white' className='w-[200px] h-[180px] top-[50px]'/>
-        <BsArrowDownRight color='white' className='w-[200px] h-[180px] top-[50px]'/>  
+        className='w-[260px] h-[400px] relative my-8 animate-bounce mt-[100px]'/>
+        <h3 className='uppercase text-gray-300 font-bold text-5xl w-full text-center'>step 1</h3>
+        <button className='uppercase text-gray-500 mt-3 font-semibold text-xl w-full text-center m-0'>Select your item category from our category <br />sneaker clothes pants or toys</button>
+        
+        <div className='flex flex-col items-center animate-pulse mt-[100px]'>
+          <SlArrowDown color='white' size={180} className=''/>
+          <SlArrowDown color='white' size={160} className=''/>
+          <SlArrowDown color='white' size={140} className=''/>
         </div>
 
 
-        <div className='flex w-full justify-around relative right-[50px] mt-[30px] justify-between'>
-        <motion.button onClick={allquickfn} className='uppercase self-start relative left-16 text-gray-400 text-3xl font-semibold p-3 border-2 rounded-lg'
+
+        <motion.div className='flex flex-col w-full mt-[80px]' 
         initial={{
-          x:0,
-          y:0
+          opacity:0,
+          x:200
+      }}
+      whileInView={{
+        opacity: 1,
+        x:0
+      }}
+      transition={{
+        duration:0.8
+      }}
+      viewport={{ once: true}}
+        >
+          <h3 className='uppercase font-bold text-5xl text-gray-300 mt-32 w-full block text-center'
+          
+          >step 2</h3>
+          <p className='uppercase font-semibold text-2xl text-gray-400 block text-center mt-3'><span className='text-4xl font-semibold text-red-700'>scroll down</span> and select type of legit check you want</p>
+
+        </motion.div>
+
+
+        <div className='flex w-full justify-around relative mt-[400px]'>
+        <motion.button onClick={() => { allquickfn(); scroll();
+      } } 
+        className=' z-40 uppercase self-start text-gray-400 text-3xl font-semibold p-3 border-2 rounded-lg'
+        initial={{
+          translateX: -100, opacity: 0
+          
         }} 
-        animate={{
+        whileInView={{
+          translateX: 100,
+          opacity: 1,
           rotate : quicklegit ? -90 : 0,
           x: quicklegit ? 15 : 0,
-          y: quicklegit ? 800 : 0
+          y: quicklegit ? 400 : 0
         }}
         transition={{
-          duration: 1
+          duration: 0.7
         }}
+       viewport={{ once:true}}
         >for quick legit check</motion.button>  
         
-        <motion.button onClick={alldeepfn} className='uppercase self-start text-gray-400 text-3xl font-semibold p-3 border-2 rounded-lg'
+        <motion.button onClick={() => {alldeepfn();  scroll();
+        }} className='uppercase self-start text-gray-400 relative text-3xl font-semibold p-3 border-2 rounded-lg'
         initial={{
-          x:0,
-          y:0
+          translateX: 100, opacity: 0
+          
         }} 
-        animate={{
+        whileInView={{
+          translateX: -100,
+          opacity: 1,
           rotate : deeplegit ? 90 : 0,
           x: deeplegit ? 100 : 0,
-          y: deeplegit ? 800 : 0
+          y: deeplegit ? 400 : 0
         }}
         transition={{
-          duration: 1
+          duration: 0.7
         }}
+       viewport={{ once:true}}
         >for deep legit check</motion.button>
-        </div>
 
-        <motion.div id='quicklegit' className=' bg-gray-800 scroll-m-8 flex-col gap-[150px] absolute right-0 top-[220%] w-[60%] border-l p-6' 
+
+        </div >
+
+        <motion.div id='quicklegit' className=' scroll-m-8 flex-col gap-[150px] absolute right-0 top-[220%] w-[60%] border-l p-6' 
         initial={{
           opacity: 0, 
           x: 200
@@ -112,7 +167,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.div id='deeplegit' className=' bg-gray-800 opacity-0 scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-r p-6' 
+        <motion.div id='deeplegit' className=' scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-r p-6' 
         initial={{opacity: 0 , x: 200}} 
         animate={{
           opacity:deeplegit ? 1 : 0, 

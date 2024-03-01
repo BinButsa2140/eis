@@ -1,17 +1,15 @@
 import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Howto from "./Howto";
 import Hero from "./Hero";
 import yourcategory from '../assets/yourcategory.png'
 import takeapic from '../assets/takeapic.png'
 import certi from '../assets/certi.png'
+import hand2hand from '../assets/hand2hand.png'
 
 export {
     Navbar,
-    Footer,
-    Howto,
     Hero,
     yourcategory,
     takeapic,
-    certi
+    certi,
+    hand2hand
 }
