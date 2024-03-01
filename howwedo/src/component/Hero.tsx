@@ -1,8 +1,7 @@
 import React, {useRef, useState} from 'react'
 import { yourcategory, takeapic, certi, hand2hand} from '.';
-import { animate, delay, easeOut, motion } from "framer-motion"
+import { animate, delay, easeIn, easeOut, motion } from "framer-motion"
 import { SlArrowDown } from "react-icons/sl"
-import { Link, animateScroll as scroll } from "react-scroll"
 
 const Hero = () => {
   const [quicklegit,setquicklegit] = useState(false)
@@ -112,7 +111,7 @@ const Hero = () => {
           opacity: 1,
           rotate : quicklegit ? -90 : 0,
           x: quicklegit ? -200 : 0,
-          y: quicklegit ? 400 : 0
+          y: quicklegit ? 800 : 0
         }}
         transition={{
           duration: 0.7
@@ -131,7 +130,7 @@ const Hero = () => {
           opacity: 1,
           rotate : deeplegit ? 90 : 0,
           x: deeplegit ? 200 : 0,
-          y: deeplegit ? 400 : 0
+          y: deeplegit ? 800 : 0
         }}
         transition={{
           duration: 0.7
@@ -142,14 +141,15 @@ const Hero = () => {
 
         </div >
 
-        <motion.div className={!checkOP ? 'hidden' : 'w-full'}>
-        <motion.div id='quicklegit' className='flex-col gap-[150px] absolute right-0 w-[70%] border-l p-6' 
+        <motion.div className={!checkOP ? 'hidden' : 'w-full mt-10'}>
+        <motion.div id='quicklegit' className=' bg-[#232A33] bg-opacity-40 flex-col gap-[150px] absolute right-0 w-[70%] border-l p-6' 
         initial="hidden" 
         whileInView={{
           opacity:quicklegit ? 1 : 0, 
           x:quicklegit ? 0 : 'hidden'
         }} 
         transition={{
+          ease: 'easeIn',
           type: 'between'
         }}
         >
@@ -164,22 +164,23 @@ const Hero = () => {
         </motion.div>
 
         
-        <motion.div id='deeplegit' className='flex-col gap-[150px] w-[70%] border-r p-6' 
+        <motion.div id='deeplegit' className='bg-[#232A33] bg-opacity-40 flex-col gap-[150px] w-[70%] border-r p-6' 
         initial="hidden" 
         animate={{
           opacity:deeplegit ? 1 : 0, 
           x:deeplegit ? 0 : 'hidden'
         }} 
         transition={{
+          ease: 'easeIn',
           type: 'between'
         }}
         >
           <div className='flex gap-[150px]'>
           <h3 className='text-gray-300 self-center font-bold text-6xl text-end'>step 2 <br /><span className='uppercase text-gray-400 font-lg text-xl'>Send us your items directly via mail to address </span></h3>
-          <img src={hand2hand} className='w-[600px] h-[500px] block' />
+          <img src={hand2hand} className='w-[800px] h-[700px] block' />
           </div>
           <div  ref={step3Ref1} className='flex '>
-            <img src={certi} className='w-[700px] h-[450px] mt-[200px] self-start' alt="" />
+            <img src={certi} className='w-[700px] h-[450px] mt-[100px] mb-[100px] self-start' alt="" />
             <h3  className='text-gray-300 self-center font-bold text-6xl text-start ml-10'>step 3 <br /><span className='uppercase text-gray-400 font-lg text-xl text-balance'>your result might take a longer time than quick legit then you will get certificate in four to five days with over 95% correct rate</span></h3>
           </div>
         </motion.div>
