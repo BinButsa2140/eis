@@ -9,7 +9,6 @@ const Hero = () => {
   const [deeplegit,setdeeplegit] = useState(false)
   const [checkOP,setcheckOP] = useState(false)
   const step3Ref1 = useRef<HTMLDivElement | null>(null)
-  const step3Ref2 = useRef<HTMLDivElement | null>(null)
 
 
 
@@ -56,8 +55,8 @@ const Hero = () => {
 
   const scroll = () => {
     setTimeout(() => {
-      step3Ref2.current?.scrollIntoView({behavior : 'smooth'});
-    }, 20);
+      step3Ref1.current?.scrollIntoView({behavior : 'smooth'});
+    }, 90);
   }
 
 
@@ -90,7 +89,7 @@ const Hero = () => {
       transition={{
         duration:0.8
       }}
-      viewport={{ once: true}}
+      viewport={{ once: false}}
         >
           <h3 className='uppercase font-bold text-5xl text-gray-300 mt-32 w-full block text-center'
           
@@ -112,17 +111,17 @@ const Hero = () => {
           translateX: 100,
           opacity: 1,
           rotate : quicklegit ? -90 : 0,
-          x: quicklegit ? 15 : 0,
+          x: quicklegit ? -200 : 0,
           y: quicklegit ? 400 : 0
         }}
         transition={{
           duration: 0.7
         }}
-       viewport={{ once:true}}
+       viewport={{ once: false}}
         >for quick legit check</motion.button>  
         
         <motion.button onClick={() => {alldeepfn();  scroll();
-        }} className='uppercase self-start text-gray-400 relative text-3xl font-semibold p-3 border-2 rounded-lg'
+        }} className=' z-40 uppercase self-start text-gray-400 text-3xl font-semibold p-3 border-2 rounded-lg'
         initial={{
           translateX: 100, opacity: 0
           
@@ -131,63 +130,60 @@ const Hero = () => {
           translateX: -100,
           opacity: 1,
           rotate : deeplegit ? 90 : 0,
-          x: deeplegit ? 100 : 0,
+          x: deeplegit ? 200 : 0,
           y: deeplegit ? 400 : 0
         }}
         transition={{
           duration: 0.7
         }}
-       viewport={{ once:true}}
+       viewport={{ once:false}}
         >for deep legit check</motion.button>
 
 
         </div >
 
-        <motion.div id='quicklegit' className=' scroll-m-8 flex-col gap-[150px] absolute right-0 top-[220%] w-[60%] border-l p-6' 
-        initial={{
-          opacity: 0, 
-          x: 200
-        }} 
-        animate={{
+        <motion.div className={!checkOP ? 'hidden' : 'w-full'}>
+        <motion.div id='quicklegit' className='flex-col gap-[150px] absolute right-0 w-[70%] border-l p-6' 
+        initial="hidden" 
+        whileInView={{
           opacity:quicklegit ? 1 : 0, 
-          x:quicklegit ? 0 : 200
+          x:quicklegit ? 0 : 'hidden'
         }} 
         transition={{
-          duration: 1, 
-          ease: "easeOut"
+          type: 'between'
         }}
         >
-          <div className='flex gap-[150px]'>
+          <div  className='flex gap-[150px]'>
           <img src={takeapic} className='w-[500px] h-[700px] block' />
-          <h3 className='text-gray-400 self-center font-bold text-4xl text-start'>step 2 <br /><span className='uppercase text-gray-500 font-lg text-base'>Send us images of your items as requested via our email, such as the appearance, soles or size tag </span></h3>
+          <h3  className='text-gray-300 self-center font-bold text-6xl text-start'>step 2 <br /><span className='uppercase text-gray-400 font-lg text-xl'>Send us images of your items as requested via our email, such as the appearance, soles or size tag </span></h3>
           </div>
-          <div className='flex'>
-            <h3 className='text-gray-400 self-center font-bold text-4xl text-start m-10'>step 3 <br /><span className='uppercase text-gray-500 font-lg text-base'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
-            <img src={certi} className='w-[700px] h-[450px] mt-[200px] self-start' alt="" />
+          <div ref={step3Ref1} className='flex'>
+            <h3 className='text-gray-300 self-center font-bold text-6xl text-end mr-10'>step 3 <br /><span className='uppercase text-gray-400 font-lg text-xl'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
+            <img src={certi} className='w-[600px] h-[450px] mt-[200px] self-start' alt="" />
           </div>
         </motion.div>
 
-        <motion.div id='deeplegit' className=' scroll-m-8 flex-col gap-[150px] absolute left-0 top-[220%] w-[60%] border-r p-6' 
-        initial={{opacity: 0 , x: 200}} 
+        
+        <motion.div id='deeplegit' className='flex-col gap-[150px] w-[70%] border-r p-6' 
+        initial="hidden" 
         animate={{
           opacity:deeplegit ? 1 : 0, 
-          x:deeplegit ? 0 : 200
+          x:deeplegit ? 0 : 'hidden'
         }} 
         transition={{
-          duration: 1, 
-          ease: "easeOut"
+          type: 'between'
         }}
         >
           <div className='flex gap-[150px]'>
-          <h3 className='text-gray-400 self-center font-bold text-4xl text-start'>step 2 <br /><span className='uppercase text-gray-500 font-lg text-base'>Send us images of your items as requested via our email, such as the appearance, soles or size tag </span></h3>
-          <img src={takeapic} className='w-[500px] h-[700px] block' />
+          <h3 className='text-gray-300 self-center font-bold text-6xl text-end'>step 2 <br /><span className='uppercase text-gray-400 font-lg text-xl'>Send us your items directly via mail to address </span></h3>
+          <img src={hand2hand} className='w-[600px] h-[500px] block' />
           </div>
-          <div className='flex'>
+          <div  ref={step3Ref1} className='flex '>
             <img src={certi} className='w-[700px] h-[450px] mt-[200px] self-start' alt="" />
-            <h3 className='text-gray-400 self-center font-bold text-4xl text-start m-10'>step 3 <br /><span className='uppercase text-gray-500 font-lg text-base'>Get your result and certificate in just a few days with over 80% correct rate</span></h3>
+            <h3  className='text-gray-300 self-center font-bold text-6xl text-start ml-10'>step 3 <br /><span className='uppercase text-gray-400 font-lg text-xl text-balance'>your result might take a longer time than quick legit then you will get certificate in four to five days with over 95% correct rate</span></h3>
           </div>
         </motion.div>
-
+        </motion.div>
     </div>
     
   )
