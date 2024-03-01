@@ -1,28 +1,26 @@
 import { strengthpoint } from "../../contents/strenghpoints"
 
 export default function Whyus() {
+    
   return (
-    <div className='h-screen flex mt-10 mb-56 mx-20'>
-        <div className=" flex flex-col h-full 
-        w-full justify-center">
-            <div className="my-10">
-                <h1 className='text-4xl font-serif font-bold
-                my-5 uppercase text-Start  w-2/3'>
-                        Trustworthy Authentication Services for Your Products
-                </h1>
-                <p className="">
+    <div className="mt-32 mb-44 max-h-screen mx-10 content-center ">
+        <div className="flex flex-col">
+            <div className="">
+                <h1 className="text-3xl font-serif font-bold lg:w-2/5 xl:w-2/5 sm:w-2/5 w-3/5  my-5">Trustworthy Authentication Services for Your Products</h1>
+                <h1 className="lg:w-1/2 mb-10">
                     At Fluxxer, we offer a range of services to help you determine the authenticity of your handbags, fragrance, and shoes. Our team of professionals is dedicated to providing accurate and reliable authentication.
-                </p>
+                </h1>
             </div>
-            <div className="grid lg:grid-cols-3 gap-10">
-            {strengthpoint.map((points, index)=>(
-                <div key={index} className="">
-                    <div className=" p-10 bg-gray-800 rounded-lg transition-all duration-1000 ">
-                        <h1 className="text-3xl font-bold my-3 mix-blend-screen">{points.title}</h1>
-                        <p className="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur voluptas quo recusandae architecto necessitatibus repellat voluptates consequuntur eaque laudantium!</p>
-                    </div>
-                </div>
-            ))}
+            <div className="grid lg:grid-cols-3 grid-rows-3 xl:grid gap-3 ">
+                {
+                    strengthpoint.map((data, index)=>(
+                        <div key={index} className="border border-[#232A33] p-10 rounded-md h-full">
+                            
+                            <div className="text-2xl font-bold my-3">{data.title}</div>
+                            <div className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, inventore!</div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     </div>

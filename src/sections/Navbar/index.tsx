@@ -1,14 +1,14 @@
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between w-full m-0 p-2 ">
+    <div className="flex justify-between w-full m-0 px-2 py-4">
         <div className="flex w-full">
-            <div className="text-2xl">Logo</div>
+            <div className="text-2xl ms-3 font-bold">Fluxxer logo here</div>
         </div>
 
-        <div className="w-full flex justify-center 
-         uppercase font-bold 
-        gap-10
+        <div className="w-full lg:flex justify-center 
+         uppercase font-bold hidden
+        gap-10 
         ">
             <a href="" className="">About us</a>
             <a href="" className="">How it works</a>

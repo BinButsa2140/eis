@@ -1,39 +1,32 @@
-import { pricingdata } from "../../contents/pricingdata"
+import { pricingdata } from "../../contents/pricingdata";
 
 export default function Pricing() {
   return (
-    <div id="pricing" className="h-screen">
-        <div className=" text-center">
-            <div className="text-3xl font-extrabold uppercase ">Pricing</div>
-            <div className="">Choose the pricing plan that suits your needs</div>
+    <div id="pricing" className="lg:h-screen xl:h-screen m-10 flex flex-col border-2 border-green-500">
+      <div className="">
+        <div className=" text-center my-10 font-serifz">
+          <div className="text-3xl font-extrabold uppercase ">Pricing</div>
+          <div className="">Choose the pricing plan that suits your needs</div>
         </div>
-        <div className="flex justify-center mt-10">
-            
-            <div className="flex w-[90%] gap-5">
-                {pricingdata.map((data, index) =>(
-                    <div key={index} className="bg-gray-800 w-full
-                    rounded-xl p-10 relative">
-                        <div className="grid grid-rows-3 space-y-5">
-                            <div className="">
-                                <h1 className="text-3xl font-bold my-5">{data.title}</h1>
-                                <h1 className="mb-2">{data.description}</h1>
-                            </div>
-                            <ul className="font-bold text-yellow-600 flex gap-5">
-                                {data.pro.map((pros, index)=>(
-                                    <li key={index} className="flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                                        </svg>
-                                        {pros}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <h1 className="text-4xl font-extrabold absolute bottom-2 left-3 ">{data.price}</h1>
-                    </div>
-                ))}
+        <div className="grid lg:grid-cols-3 grid-rows-3 gap-5 ">
+          {pricingdata.map((data, index) => (
+            <div className={``}>
+              <div
+                key={index}
+                className={`w-full p-10 border rounded-xl space-y-2 bg-[url(${data.bgimg})] h-full`}
+              >
+                <div className="text-xl font-serif font-bold text-center ">
+                  {data.title}
+                </div>
+                <div className="text-5xl text-center font-bold">
+                  {data.price}
+                </div>
+                <div className="">{data.description}</div>
+              </div>
             </div>
+          ))}
         </div>
+      </div>
     </div>
-  )
+  );
 }
