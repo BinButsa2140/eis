@@ -1,0 +1,3 @@
+// takeapic, certi, hand2hand
+
+import yourcategory from '../'
