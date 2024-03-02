@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="justify-center flex">
+    <div className="justify-center flex border-2">
       <div
       id="contact"
       className=" grid lg:grid-cols-2 xl:grid-cols-2 h-screen justify-center items-center

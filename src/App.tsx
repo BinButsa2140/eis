@@ -1,19 +1,23 @@
-
-import Landpage from "./sections/Landpage"
-import Navbar from "./sections/Navbar"
-
-Landpage
-
+import Landpage from "./sections/Landpage";
+import Navbar from "./sections/Navbar";
+import Froms from "./sections/Froms";
+import Footer from "./sections/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  
   return (
     <div className="">
-      <Navbar/>
-      <Landpage/>
       
+      <BrowserRouter>
+      <Navbar />
+        <Routes>
+          <Route path="eis/" element={<Landpage />}/>
+          <Route path="eis/from" element={<Froms />} />
+        </Routes>
+      <Footer/>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

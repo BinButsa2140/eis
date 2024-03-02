@@ -10,7 +10,7 @@ export default function Pricing() {
         </div>
         <div className="grid lg:grid-cols-3 grid-rows-3 gap-5 ">
           {pricingdata.map((data, index) => (
-            <div className={``}>
+            <div className={`text-center`}>
               <div
                 key={index}
                 className={`w-full p-10 border rounded-xl space-y-2 bg-[url(${data.bgimg})] h-full`}
