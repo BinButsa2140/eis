@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar,Hero } from './component'
+import { Navbar,Hero } from './component/picexport'
 
 
 const App = () => {
