@@ -1,13 +1,14 @@
-
-
-
+import { useState } from "react"
 import { brandlogo } from "../../contents/partnerimg"
 
 
-
 export default function Froms() {
-    
+    const [toggle, setToggle] = useState<boolean>(false)
 
+    function changePage():void{
+        setToggle(!toggle)
+        console.log(toggle)
+    }
     
   return (
     <div className="h-screen flex flex-col justify-center p-5 ">
@@ -19,6 +20,9 @@ export default function Froms() {
                 
             </div>
             <div className="w-full ">
+                <button className="" onClick={changePage}>
+                    change
+                </button>
                 <form className="flex flex-col bg-gray-900 p-5">
                     <div className="grid grid-cols-2">
                         <div className="flex flex-col max-w-full p-2">
@@ -64,9 +68,7 @@ export default function Froms() {
                             <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Upload images</label>
                             <input className="p-2" type="file" multiple/>
                     </div>
-                    <div className="">
-                        <button className="btn bg-gray-600 py-4 px-2"><input type="submit" /></button>
-                    </div>
+                    
 
                 </form>
             </div>

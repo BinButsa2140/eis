@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function Contact() {
   return (
     <div className="justify-center flex border-2">
@@ -18,9 +16,7 @@ export default function Contact() {
           </div>
           <div className="my-7">
             
-            <button className="btn-[#232A33] btn btn-lg">
-               <Link to={'from'}>Start now</Link>
-            </button>
+            <button className="btn-[#232A33] btn btn-lg">Start now</button>
           </div>
         </div>
       </div>
