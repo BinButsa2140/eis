@@ -38,6 +38,8 @@ export const herodata = [
     {
         type:'Fragrance',
         data:[
+            'https://media.discordapp.net/attachments/1198925459677782097/1213856057215033405/2f781275-451b-413c-bec5-1ca8ad6d841b.jpeg?ex=65f6fe8c&is=65e4898c&hm=5c18a98a2604b8260b372707e3507d62f1e082a9c4b4aeabbf382b0d76602235&=&format=webp&width=655&height=655',
+            'https://media.discordapp.net/attachments/1198925459677782097/1213856058460733470/bf246cdb-b2f0-416c-93c1-b187e598cf64.jpeg?ex=65f6fe8c&is=65e4898c&hm=30f646b1c0d29d252dc774505648359b1a9e2f3628a32144caa6600383016042&=&format=webp&width=655&height=655',
             'https://images.unsplash.com/photo-1591892153927-33f7a2ffec89?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             'https://images.unsplash.com/photo-1592842125302-53494d164c90?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             'https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

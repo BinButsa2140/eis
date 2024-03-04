@@ -35,5 +35,9 @@ export const brandlogo  = [
         name:'Yves saint laurent',
         imgpath:'https://upload.wikimedia.org/wikipedia/commons/b/b7/YSL_initials_logo.png'
 
+    },
+    {
+        name:'Misty',
+        imgpath:'https://media.discordapp.net/attachments/1198925459677782097/1213856057533927434/Screenshot_2024-03-03_211400-removebg-preview.png?ex=65f6fe8c&is=65e4898c&hm=4d0572f62e81849bc462349ea65532514600d177a7acf0a9ab00d580b5441bee&=&format=webp&quality=lossless&width=250&height=127',
     }
 ]

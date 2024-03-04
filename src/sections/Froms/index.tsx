@@ -11,7 +11,7 @@ export default function Froms() {
     }
     
   return (
-    <div className="h-screen flex flex-col justify-center p-5 ">
+    <div className=" flex flex-col justify-center p-5 ">
         <div className="">
             
         </div>
@@ -26,27 +26,27 @@ export default function Froms() {
                 <form className="flex flex-col bg-gray-900 p-5">
                     <div className="grid grid-cols-2">
                         <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Firstname</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Firstname</label>
                             <input className="p-2" type="text" placeholder="Firstname"/>
                         </div>
                         <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Lastname</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Lastname</label>
                             <input className="p-2" type="text" placeholder="Lastname"/>
                         </div>
                     </div>
                     <div className="grid grid-cols-2">
                         <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Email</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Email</label>
                             <input className="p-2" type="email" placeholder="Enter email"/>
                         </div>
                         <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Number</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Number</label>
                             <input className="p-2" type="text" placeholder=" Enter phone number"/>
                         </div>
                     </div>
                     <div className="grid grid-cols-2">
                         <div className="flex flex-col max-w-full p-2 uppercase">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Product brand</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Product brand</label>
                             <select className="p-2" name="" id="">
                                 {
                                     brandlogo.map((data,index)=>(
@@ -56,16 +56,16 @@ export default function Froms() {
                             </select>
                         </div>
                         <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Number</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Number</label>
                             <input className="p-2" type="text" placeholder=" Enter phone number"/>
                         </div>
                     </div>
                     <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Address</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Address</label>
                             <input className="p-2" type="text" placeholder=" Enter your address"/>
                     </div>
                     <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-serif py-2 rounded-lg" htmlFor="">Upload images</label>
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Upload images</label>
                             <input className="p-2" type="file" multiple/>
                     </div>
                     

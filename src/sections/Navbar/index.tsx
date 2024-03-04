@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between w-full m-0 p-5 items-center">
+    <div className="flex justify-between w-full m-0 p-3 items-center">
       <div className="flex w-full">
         <div className="text-2xl ms-3 font-bold uppercase group">
           <Link to={'eis/'}>Flu<span className='text-green-500'>x</span><span className='text-green-500 transition-colors group-hover:text-red-500 duration-1000'>x</span>er</Link>
