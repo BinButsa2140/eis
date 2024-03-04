@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { brandlogo } from "../../contents/partnerimg"
+import { steps } from "../../contents/steps"
 
 
 export default function Froms() {
@@ -12,18 +13,26 @@ export default function Froms() {
     
   return (
     <div className=" flex flex-col justify-center p-5 ">
-        <div className="">
-            
-        </div>
-        <div className=" flex flex-wrap lg:flex-nowrap xl:flex-nowrap rounded-lg">
-            <div className=" w-full">
-                
+        
+        <div className=" flex flex-wrap lg:flex-nowrap xl:flex-nowrap rounded-lg gap-5">
+            <div className="flex flex-col w-full gap-5 ">
+                {steps.map((data,index)=>(
+                    <div className="flex w-full gap-2 items-center group" key={index}>
+                        <div className="w-full">
+                            <img className="h-28 w-full object-cover brightness-50 blur-sm" src={data.img} alt="" />
+                        </div>
+                        <div className="absolute flex items-center font-second font-bold gap-5 m-3 ">
+                            <div className="text-6xl">{data.number}</div>
+                            <div className="text-3xl">{data.title}</div>
+                        </div>
+                    </div>
+                ))}
             </div>
             <div className="w-full ">
                 <button className="" onClick={changePage}>
-                    change
+                    
                 </button>
-                <form className="flex flex-col bg-gray-900 p-5">
+                <form className="flex flex-col  p-5">
                     <div className="grid grid-cols-2">
                         <div className="flex flex-col max-w-full p-2">
                             <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Firstname</label>
@@ -44,10 +53,10 @@ export default function Froms() {
                             <input className="p-2" type="text" placeholder=" Enter phone number"/>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2">
-                        <div className="flex flex-col max-w-full p-2 uppercase">
+                    <div className="flex flex-wrap lg:flex-nowrap xl:flex-nowrap md:flex-nowrap">
+                        <div className="flex flex-col w-full p-2 uppercase">
                             <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Product brand</label>
-                            <select className="p-2" name="" id="">
+                            <select className="p-2 w-full" name="" id="">
                                 {
                                     brandlogo.map((data,index)=>(
                                         <option className="uppercase" key={index} value="">{data.name}</option>
@@ -55,8 +64,8 @@ export default function Froms() {
                                 }
                             </select>
                         </div>
-                        <div className="flex flex-col max-w-full p-2">
-                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Number</label>
+                        <div className="flex w-full flex-col max-w-full p-2">
+                            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Series</label>
                             <input className="p-2" type="text" placeholder=" Enter phone number"/>
                         </div>
                     </div>
@@ -67,6 +76,11 @@ export default function Froms() {
                     <div className="flex flex-col max-w-full p-2">
                             <label className="font-bold font-second py-2 rounded-lg" htmlFor="">Upload images</label>
                             <input className="p-2" type="file" multiple/>
+                    </div>
+                    <div className="flex justify-center">
+                        <button className="btn px-6  btn-outline text-green-400 hover:bg-green-500 hover:border-green-500">
+                            <input type="submit" />
+                        </button>
                     </div>
                     
 

@@ -1,6 +1,7 @@
 import { Autoplay, Pagination } from "swiper/modules";
 import { herodata } from "../../contents/hero";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -26,7 +27,9 @@ export default function Hero() {
             </p>
             <div className="flex gap-7">
               <button className="btn btn-neutral">Learn more</button>
-              <button className="btn btn-outline text-green-400 hover:bg-green-500 hover:border-green-500">Start now</button>
+              <button className="btn btn-outline text-green-400 hover:bg-green-500 hover:border-green-500">
+                <Link to="/eis/from" className="w-[4rem]">Start now</Link>
+              </button>
             </div>
           </div>
         </div>

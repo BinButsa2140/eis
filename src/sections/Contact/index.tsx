@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Contact() {
   return (
     <div className="justify-center flex ">
@@ -15,7 +17,9 @@ export default function Contact() {
           </div>
           <div className="my-7">
             
-            <button className="btn-[#232A33] btn btn-lg">Start now</button>
+          <button className="btn bg-gray-900 hover:bg-green-400 hover:border-green-400 hover:text-black" >
+             <Link to="/eis/from" className="w-[4rem]">Start now</Link>
+          </button>
           </div>
         </div>
       </div>
