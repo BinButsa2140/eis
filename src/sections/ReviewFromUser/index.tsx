@@ -6,11 +6,11 @@ import { Autoplay, Pagination } from 'swiper/modules'
 
 export default function ReviewFromUser() {
   return (
-    <div className='h-screen overflow-hidden flex flex-col justify-center mt-20 lg:mt-0 xl:mt-0 border-2 border-yellow-500'>
+    <div className='h-screen overflow-hidden flex flex-col justify-center mt-20 lg:mt-0 xl:mt-0'>
         
         <h1 className='text-3xl mb-10 font-bold text-center'>Happy Customers</h1>
         <div className="flex overflow-hidden justify-center rounded-xl">
-            <Swiper className='lg:h-96 h-80 border-2 border-red-400 flex rounded-xl'
+            <Swiper className='lg:h-96 h-80  flex rounded-xl'
             mousewheel={true}
             direction='vertical'
             slidesPerView={1}
@@ -27,12 +27,12 @@ export default function ReviewFromUser() {
             >
                 {reviewdata.map((data, index)=>(
                     <SwiperSlide className='lg:h-64 xl:h-64 flex items-center 
-                    justify-center rounded-xl bg-white text-black
-                    border-2 border-red-600 h-64
+                    justify-center bg-white text-black
+                    
                     '
                      key={index}>
                         <div className="m-10 h-3/4 flex flex-col gap-4 p-10 w-full">
-                            <div className="h-3/5 flex border-b border-white">
+                            <div className="h-3/5 flex">
                                 <img className='max-w-20 max-h-20 rounded-full' src={data.pfppath} alt="" />
                                 <div className="flex w-full my-5 justify-end">
                                     {Array.from({length: data.rate},(_,i)=>(
@@ -51,6 +51,9 @@ export default function ReviewFromUser() {
                                     {data.review}
                                 </h1>
                             </div>
+                        </div>
+                        <div className="w-full h-full lg:block xl:block md:block hidden">
+                            <img className='w-full object-conver' src={data.reviewimg} alt="" />
                         </div>
                     </SwiperSlide>
                 ))}

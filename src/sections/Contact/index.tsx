@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="justify-center flex border-2">
+    <div className="justify-center flex ">
       <div
       id="contact"
       className=" grid lg:grid-cols-2 xl:grid-cols-2 h-screen justify-center items-center
@@ -9,10 +9,9 @@ export default function Contact() {
       <div className="order-last lg:order-first">
         
         <div className=" text-center">
-          <div className="lg:w-full text-3xl my-5 uppercase font-serif font-bold ">get your items certificate now</div>
+          <div className="lg:w-full text-3xl my-5 uppercase font-main font-bold ">get your items certificate now</div>
           <div className="mx-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            aut?
+          "Choose us for top-notch service! We're all about reliability, <span className="text-green-500">speedy</span> solutions, and being there for you 24/7. Trust us with your needs, and let's prove we're the perfect fit for you!"
           </div>
           <div className="my-7">
             
