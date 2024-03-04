@@ -60,7 +60,7 @@ const Hero = () => {
 
 
   return (
-    <div className='flex flex-wrap justify-center relative w-full h-[500px] top-[50px]'>
+    <div className='bg-[#080b0e] flex flex-wrap justify-center relative w-full h-[500px] top-[50px] h-full'>
         <h1 className='uppercase block text-4xl w-full text-center font-extrabold font-weight text-gray-200'>how it work</h1>
         <h2 className='uppercase text-gray-300 w-full text-center mt-14 font-bold text-2xl'>for quick legit check</h2>
         <img src={yourcategory}
