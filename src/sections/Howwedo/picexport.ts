@@ -1,7 +1,7 @@
-import yourcategory from '../../assets/yourcategory.png'
-import takeapic from '../../assets/takeapic.png'
-import certi from '../../assets/certi.png'
-import hand2hand from '../../assets/hand2hand.png'
+import yourcategory from '../../assets/images/yourcategory.png'
+import takeapic from '../../assets/images/takeapic.png'
+import certi from '../../assets/images/certi.png'
+import hand2hand from '../../assets/images/hand2hand.png'
 
 export {
     yourcategory,
