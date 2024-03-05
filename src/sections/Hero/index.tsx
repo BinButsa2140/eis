@@ -27,9 +27,10 @@ export default function Hero() {
             </p>
             <div className="flex gap-7">
               <button className="btn btn-neutral">Learn more</button>
-              <button className="btn btn-outline text-green-400 hover:bg-green-500 hover:border-green-500">
-                <Link to="/eis/from" className="w-[4rem]">Start now</Link>
-              </button>
+              <Link to="/from" className="btn btn-outline text-green-400 hover:bg-green-500 hover:border-green-500">
+                Start now
+              </Link>
+
             </div>
           </div>
         </div>

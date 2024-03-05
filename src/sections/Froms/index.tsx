@@ -1,6 +1,7 @@
 
 import { brandlogo } from "../../contents/partnerimg";
 import { steps } from "../../contents/steps";
+import { Link } from "react-router-dom";
 
 
 export default function Froms() {
@@ -125,11 +126,9 @@ export default function Froms() {
               <input className="p-2" type="file" multiple />
             </div>
             <div className="flex justify-center">
-              <button
-                className="btn px-6  btn-outline text-green-400 hover:bg-green-500 hover:border-green-500"
-              >
-                Submit
-              </button>
+                <Link className="btn px-6  btn-outline text-green-400 hover:bg-green-500 hover:border-green-500" to='/from/submit'>
+                  Submit
+                </Link>
               
             </div>
           </form>
