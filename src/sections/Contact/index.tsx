@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
-    <div className="justify-center flex ">
+    <div className="justify-center flex m-5">
       <div
       id="contact"
       className=" grid lg:grid-cols-2 xl:grid-cols-2 lg:h-screen xl:h-screen justify-center items-center
@@ -16,10 +16,7 @@ export default function Contact() {
           "Choose us for top-notch service! We're all about reliability, <span className="text-green-500 font-bold">speedy</span> solutions, and being there for you 24/7. <span className="text-green-500 font-bold">Trust</span> us with your needs, and let's prove we're the perfect fit for you!"
           </div>
           <div className="my-7">
-            
-          <button className="btn bg-gray-900 hover:bg-green-400 hover:border-green-400 hover:text-black" >
-             <Link to="/eis/from" className="w-[4rem]">Start now</Link>
-          </button>
+            <Link to="/from" className="w-[8rem] btn bg-gray-900 hover:bg-green-400 hover:border-green-400 hover:text-black">Start now</Link>
           </div>
         </div>
       </div>

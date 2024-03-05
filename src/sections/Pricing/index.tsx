@@ -11,7 +11,7 @@ export default function Pricing() {
         </div>
         <div className="grid lg:grid-cols-3 grid-rows-3 gap-5 ">
           {pricingdata.map((data, index) => (
-            <Link to={'/eis/from'} className="text-center rounded-lg border border-gray-800 overflow-hidden group hover:bg-green-500 transition-colors">
+            <Link to={'/from'} className=" text-center rounded-lg border border-gray-800 overflow-hidden group hover:bg-green-500 transition-colors">
               <div className="">
                   <img
                     className="h-40 w-full object-cover brightness-75 "
@@ -33,7 +33,8 @@ export default function Pricing() {
                   <div className="group-hover:text-black">
                     {data.description}
                   </div>
-                  <div className="flex flex-row  text-green-500 transition-colors group-hover:text-black justify-center gap-3 font-bold">
+                  <div className="flex flex-col lg:flex-row xl:flex-row md:flex-row  text-green-500 transition-colors   
+                  group-hover:text-black justify-center gap-3 font-bold">
                     {data.pro.map((pro, index) => (
                       <div className="" key={index}>
                         {pro}

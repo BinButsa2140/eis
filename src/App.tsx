@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="eis" element={<Landpage />} />
+          <Route path="eis/" element={<Landpage />} />
           <Route path="from/*" element={<Froms />}>
           </Route>
           <Route path="from/submit" element={<Submit name="Josh" />} />

@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 export default function Froms() {
 
-
   return (
     <div className=" flex flex-col justify-center p-5 ">
       <div className=" flex flex-wrap lg:flex-nowrap xl:flex-nowrap rounded-lg gap-5">
@@ -108,13 +107,12 @@ export default function Froms() {
                 className="font-bold font-second py-2 rounded-lg"
                 htmlFor=""
               >
-                Address
+                Package
               </label>
-              <input
-                className="p-2"
-                type="text"
-                placeholder=" Enter your address"
-              />
+              <select name="Package" id="" className="p-2">
+                <option value="">Basic(1 items)</option>
+                <option value="">Premium(5 items)</option>
+              </select>
             </div>
             <div className="flex flex-col max-w-full p-2">
               <label
