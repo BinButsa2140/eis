@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="justify-center flex ">
       <div
       id="contact"
-      className=" grid lg:grid-cols-2 xl:grid-cols-2 h-screen justify-center items-center
+      className=" grid lg:grid-cols-2 xl:grid-cols-2 lg:h-screen xl:h-screen justify-center items-center
     text-white relative content-center lg:mx-5"
     >
       <div className="order-last lg:order-first">
