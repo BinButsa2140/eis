@@ -7,10 +7,10 @@ export default function Submit({ name = 'name' }: { name?: string }) {
                 WE have received your form 
             </div>
             <div className="text-2xl">
-            Hello, {name}! Thank you for submitting the form. We will contact you soon!.
+            Hello, customer! Thank you for submitting the form. We will contact you soon!.
         </div> 
         </div>
-        
+        <div className="hidden">{name}</div>
     </div>
   )
 }

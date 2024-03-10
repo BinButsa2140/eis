@@ -5,6 +5,7 @@ import Pricing from "../Pricing"
 import Branding from "../Branding"
 import ReviewFromUser from "../ReviewFromUser"
 import Contact from "../Contact"
+import Footer from "../Footer"
 
 
 function Landpage() {
@@ -18,6 +19,7 @@ function Landpage() {
         <ReviewFromUser/>
         <Pricing/>
         <Contact/>
+        <Footer />
       </div>
   )
 }

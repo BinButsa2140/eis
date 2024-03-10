@@ -1,7 +1,6 @@
 import Landpage from "./sections/Landpage";
 import Navbar from "./sections/Navbar";
 import Froms from "./sections/Froms";
-import Footer from "./sections/Footer";
 import Submit from "./sections/Submit";
 import Pagenotfault from "./sections/Pagenotfault";
 
@@ -21,7 +20,7 @@ function App() {
           <Route path="from/submit" element={<Submit name="Josh" />} />
           <Route path="*" element={<Pagenotfault />} />
         </Routes>
-        <Footer />
+        
       </BrowserRouter>
     </div>
   );

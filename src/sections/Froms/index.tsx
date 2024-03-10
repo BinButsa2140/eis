@@ -1,10 +1,78 @@
-
+import { useState } from "react";
 import { brandlogo } from "../../contents/partnerimg";
 import { steps } from "../../contents/steps";
 import { Link } from "react-router-dom";
 
-
 export default function Froms() {
+  const [isPremium, setisPremium] = useState(false);
+  function from() {
+    let content;
+    if (isPremium) {
+      content = (
+        <div className="flex w-full">
+          <div className="flex flex-col w-full p-2 uppercase">
+            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
+              Product brand
+            </label>
+            <select className="p-2 w-full" name="" id="">
+              {brandlogo.map((data, index) => (
+                <option className="uppercase" key={index} value="">
+                  {data.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex w-full flex-col max-w-full p-2">
+            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
+              Series
+            </label>
+            <input
+              className="p-2"
+              type="text"
+              placeholder=" Enter product series"
+            />
+          </div>
+        </div>
+      );
+    } else {
+      content = (
+        <div className="flex w-full">
+          <div className="flex flex-col w-full p-2 uppercase">
+            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
+              Product brand
+            </label>
+            <select className="p-2 w-full" name="" id="">
+              {brandlogo.map((data, index) => (
+                <option className="uppercase" key={index} value="">
+                  {data.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex w-full flex-col p-2">
+            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
+              Series
+            </label>
+            <input
+              className="p-2"
+              type="text"
+              placeholder=" Enter product series"
+            />
+          </div>
+        </div>
+      );
+    }
+  
+    // Repeat the content 5 times if isPremium is true
+    if (isPremium) {
+      return Array.from({ length: 5 }, (_, index) => (
+        <div className="flex flex-col" key={index}>{content}</div>
+      ));
+    } else {
+      return content;
+    }
+  }
+  
 
   return (
     <div className=" flex flex-col justify-center p-5 ">
@@ -72,35 +140,8 @@ export default function Froms() {
                 />
               </div>
             </div>
-            <div className="flex flex-wrap lg:flex-nowrap xl:flex-nowrap md:flex-nowrap">
-              <div className="flex flex-col w-full p-2 uppercase">
-                <label
-                  className="font-bold font-second py-2 rounded-lg"
-                  htmlFor=""
-                >
-                  Product brand
-                </label>
-                <select className="p-2 w-full" name="" id="">
-                  {brandlogo.map((data, index) => (
-                    <option className="uppercase" key={index} value="">
-                      {data.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="flex w-full flex-col max-w-full p-2">
-                <label
-                  className="font-bold font-second py-2 rounded-lg"
-                  htmlFor=""
-                >
-                  Series
-                </label>
-                <input
-                  className="p-2"
-                  type="text"
-                  placeholder=" Enter product series"
-                />
-              </div>
+            <div className="flex flex-col">
+              {from()}
             </div>
             <div className="flex flex-col max-w-full p-2">
               <label
@@ -109,7 +150,7 @@ export default function Froms() {
               >
                 Package
               </label>
-              <select name="Package" id="" className="p-2">
+              <select onChange={() => setisPremium(!isPremium)} name="Package" id="" className="p-2">
                 <option value="">Basic(1 items)</option>
                 <option value="">Premium(5 items)</option>
               </select>
@@ -124,10 +165,12 @@ export default function Froms() {
               <input className="p-2" type="file" multiple />
             </div>
             <div className="flex justify-center">
-                <Link className="btn px-6  btn-outline text-green-400 hover:bg-green-500 hover:border-green-500" to='/from/submit'>
-                  Submit
-                </Link>
-              
+              <Link
+                className="btn px-6  btn-outline text-green-400 hover:bg-green-500 hover:border-green-500"
+                to="/from/submit"
+              >
+                Submit
+              </Link>
             </div>
           </form>
         </div>
