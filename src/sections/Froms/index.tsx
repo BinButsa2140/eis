@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import { brandlogo } from "../../contents/partnerimg";
 import { steps } from "../../contents/steps";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Froms() {
   const [isPremium, setisPremium] = useState(false);
   function from() {
-    let content;
+    let content:ReactElement;
     if (isPremium) {
       content = (
         <div className="flex w-full">
@@ -79,7 +79,7 @@ export default function Froms() {
       <div className=" flex flex-wrap lg:flex-nowrap xl:flex-nowrap rounded-lg gap-5">
         <div className="flex flex-col w-full gap-5 ">
           {steps.map((data, index) => (
-            <div className="flex w-full gap-2 items-center group" key={index}>
+            <div className="flex w-full gap-2 items-center group hover:text-white transition-all" key={index}>
               <div className="w-full">
                 <img
                   className="h-28 w-full object-cover brightness-50 "

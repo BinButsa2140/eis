@@ -214,7 +214,7 @@ const Hero = () => {
             <div className="flex flex-col gap-5 justify-center">
               <div className="uppercase font-bold text-xl">step 3</div>
               <div className="">
-                  We do checking many times to make sure that your items will get the right result 
+              We perform thorough checks multiple times to ensure the accuracy of your items, guaranteeing that you will receive the correct results with utmost confidence.
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ const Hero = () => {
             <div className="flex flex-col gap-5 justify-center">
               <div className="uppercase font-bold text-xl">step 4</div>
               <div className="">
-                  when we finish, we will send you the result and certificate on your email!
+              Rest assured, upon successful completion, we will promptly send you the verified results and an official certificate directly to your email, ensuring a trustworthy and reliable process
               </div>
             </div>
             <img src="https://i.postimg.cc/prTLQPrr/C-5.png" 

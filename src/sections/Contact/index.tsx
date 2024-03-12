@@ -11,12 +11,12 @@ export default function Contact() {
       <div className="order-last lg:order-first">
         
         <div className=" text-center">
-          <div className="lg:w-full text-3xl my-5 uppercase font-main font-bold ">get your items certificate now</div>
+          <div className="lg:w-full text-3xl my-5 uppercase font-main font-bold ">check your items certificate now</div>
           <div className="mx-7">
           "Choose us for top-notch service! We're all about reliability, <span className="text-green-500 font-bold">speedy</span> solutions, and being there for you 24/7. <span className="text-green-500 font-bold">Trust</span> us with your needs, and let's prove we're the perfect fit for you!"
           </div>
           <div className="my-7">
-            <Link to="/from" className="w-[8rem] btn bg-gray-900 hover:bg-green-400 hover:border-green-400 hover:text-black">Start now</Link>
+            <Link to="/checknumber" className="w-[8rem] btn bg-gray-900 hover:bg-green-400 hover:border-green-400 hover:text-black">Check now</Link>
           </div>
         </div>
       </div>

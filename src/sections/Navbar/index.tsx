@@ -11,9 +11,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className=" lg:flex w-1/5 justify-center uppercase font-bold hidden gap-10 hover:text-green-500 transition-colors">
+      <div className="lg:flex xl:flex md:flex hidden w-1/5 justify-center uppercase font-bold gap-10 hover:text-green-500 transition-colors">
+        <Link to="checknumber" className="">Check NO.</Link>
+      </div>
+
+      <div className=" xl:flex md:flex lg:flex w-1/5 justify-center uppercase font-bold hidden gap-10 hover:text-green-500 transition-colors">
         <Link to="how-it-works" className="">How we works</Link>
       </div>
+
       <div className="w-[8rem]">
       <Link to="from" className=" w-full btn bg-gray-900 
       hover:bg-green-400 hover:border-green-400 hover:text-black">

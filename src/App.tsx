@@ -3,6 +3,7 @@ import Navbar from "./sections/Navbar";
 import Froms from "./sections/Froms";
 import Submit from "./sections/Submit";
 import Pagenotfault from "./sections/Pagenotfault";
+import CheckNumber from "./sections/CheckNumber";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./sections/Howwedo/Hero";
@@ -18,6 +19,7 @@ function App() {
           </Route>
           <Route path="how-it-works" element={<Hero />}></Route>
           <Route path="from/submit" element={<Submit name="Josh" />} />
+          <Route path="checknumber" element={<CheckNumber></CheckNumber>}></Route>
           <Route path="*" element={<Pagenotfault />} />
         </Routes>
         
