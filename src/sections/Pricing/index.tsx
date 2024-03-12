@@ -30,11 +30,11 @@ export default function Pricing() {
                   <div className="text-5xl text-center font-bold font-second uppercase group-hover:text-black text-green-500 transition-colors">
                     {data.price}
                   </div>
-                  <div className="group-hover:text-black">
+                  <div className="group-hover:text-black group-hover:font-semibold transition-all">
                     {data.description}
                   </div>
                   <div className="flex flex-col lg:flex-row xl:flex-row md:flex-row  text-green-500 transition-colors   
-                  group-hover:text-black justify-center gap-3 font-bold">
+                  group-hover:text-white justify-center gap-3 font-bold">
                     {data.pro.map((pro, index) => (
                       <div className="" key={index}>
                         {pro}

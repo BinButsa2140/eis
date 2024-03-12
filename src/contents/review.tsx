@@ -17,15 +17,15 @@ export const reviewdata =[
     },
     {
         name:'BinButsa21',
-        pfppath:'https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/416849519_390132170354145_1419841462537078802_n.jpg?_nc_cat=102&cb=99be929b-b574a898&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFy4bWZbDX2dYSPYrvovdxn7zNDa29jHZHvM0Nrb2MdkbGe1icQXNH-SqSMy-6aDStpTZVXJqjoeD0DFXNM456U&_nc_ohc=VACmX2bsQZ4AX-V-C5f&_nc_ht=scontent-bkk1-1.xx&oh=00_AfBm_WqyBBnrBpNxbT1gpVG3dahi3nDufXkZRHx6U84FnA&oe=65E2EB2A',
+        pfppath:'https://scontent.fbkk20-1.fna.fbcdn.net/v/t39.30808-6/416849519_390132170354145_1419841462537078802_n.jpg?_nc_cat=102&cb=99be929b-b574a898&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFy4bWZbDX2dYSPYrvovdxn7zNDa29jHZHvM0Nrb2MdkbGe1icQXNH-SqSMy-6aDStpTZVXJqjoeD0DFXNM456U&_nc_ohc=6iKrzInF8woAX8Jp3Tc&_nc_ht=scontent.fbkk20-1.fna&oh=00_AfChwmL3W2bmZ5htJp5IILe2Xk1slk9klr4wIN6E6fTpTg&oe=65F4B76A',
         reviewimg:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGRG-d9dMvTRCnNvpRAEjDeAcI9HcnY35TQ&usqp=CAU',
-        rate:1,
+        rate:3,
         date:'11-02-2023',
         review:'เค้าบอกว่าของผมไม่แท้ ผมซื้อมาจากคลองถมจะไม่แท้ได้ไง'
     },
     {
         name:'NueaZAZA',
-        pfppath:'https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/300177347_456408839689807_6980521070182225569_n.jpg?_nc_cat=101&cb=99be929b-b574a898&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeGk7DSwhlJ9Z7eTciIhL7ANksDCN1xeQC2SwMI3XF5ALegh8fDCmsloKZH2reC3_Gyk46huE5fdxhK6izdHQxIk&_nc_ohc=D46rPO1UcQYAX_CuNRF&_nc_ht=scontent-bkk1-1.xx&oh=00_AfDxxKtvGme59RNGgHqwr8PmVMoMPBwVEJzOpHubIo1RRg&oe=65E2214C',
+        pfppath:'https://media.discordapp.net/attachments/1173199498885996544/1216323820957208676/F2023013-9398-46AE-86B1-45B5A3E9E2AA.jpg?ex=65fff8d5&is=65ed83d5&hm=e3b9646e682618c2f98eb67fa8193871e414ff1aaae1037b89dfd5e638f36532&=&format=webp&width=367&height=655',
         reviewimg:'https://5.imimg.com/data5/ANDROID/Default/2021/2/XR/JO/HO/74947638/product-jpeg.jpg',
         rate:5,
         date:'21-03-2023',
@@ -41,7 +41,7 @@ export const reviewdata =[
     },
     {
         name:'Prudipon',
-        pfppath:'https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/307644463_1480482065698527_1290596308765084962_n.jpg?_nc_cat=103&cb=99be929b-b574a898&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeE4RJoo0UyZh05XJ4TGW5eOLwaWb2Cs2t4vBpZvYKza3hvCNd2vnyI6pAEI6ZbapPN793dsyQUskBoPG4XlWjkm&_nc_ohc=xkWN8x2MHhkAX-z7CKO&_nc_ht=scontent-bkk1-1.xx&oh=00_AfAYQZnUZqMndPpHiOSXonc97r4o1D3c2eo3wW1hucrWSA&oe=65E3C5EA',
+        pfppath:'https://media.discordapp.net/attachments/1158006168384450661/1216318075637600376/283979933_1399670907112977_6960100887702229615_n.jpg?ex=65fff37b&is=65ed7e7b&hm=b6116360f0ab68c4ab967d2d7eee8a9f1632839ebbf0c4cc90e5bf231084af38&=&format=webp&width=642&height=655',
         reviewimg:'https://inwfile.com/s-cy/f0b3w3.jpg',
         rate:5,
         date:'21-04-2023',

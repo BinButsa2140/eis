@@ -140,7 +140,7 @@ export default function Froms() {
                 />
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col transition-all duration-500">
               {from()}
             </div>
             <div className="flex flex-col max-w-full p-2">

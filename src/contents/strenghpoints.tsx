@@ -1,12 +1,12 @@
 export const strengthpoint = [
     {
         title:'Reliable',
-        description:'Count on us for unwavering reliability. We prioritize consistency in delivering top-notch services to meet your needs.'
+        description:'Our website empowers you to shop with confidence by providing a comprehensive verification process conducted by at least two specialists from Brandname companies'
         
     },
     {
         title:'Fast',
-        description:'Swift and efficient – our commitment to speed ensures you get what you need promptly without compromising quality.'
+        description:'Our website prioritizes swift, reliable information. With our streamlined verification process, you can make confident purchasing decisions quickly.'
     },
     {
         title:'Anywhere, Anytime',

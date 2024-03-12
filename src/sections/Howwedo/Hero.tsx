@@ -52,7 +52,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-[#080b0e] flex flex-wrap justify-center relative w-full h-screen top-[50px] ">
+    <div className="bg-[#080b0e] flex flex-wrap justify-center relative w-full h-full top-[50px] z-50">
       <h1 className="uppercase block text-4xl w-full text-center font-extrabold font-weight text-gray-200">
         how it work
       </h1>
@@ -78,7 +78,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="flex flex-col w-full mt-[80px]"
+        className="flex flex-col w-full "
         initial={{
           opacity: 0,
           x: 200,
@@ -160,7 +160,7 @@ const Hero = () => {
       <motion.div className={!checkOP ? "hidden" : "w-full mt-10"}>
         <motion.div
           id="quicklegit"
-          className=" bg-[#232A33] bg-opacity-40 flex-col flex gap-[150px] absolute right-0 w-[70%] p-6"
+          className=" bg-[#232A33] bg-opacity-40 flex-col flex gap-10 absolute right-0 w-[70%] p-6"
           initial="hidden"
           whileInView={{
             opacity: quicklegit ? 1 : 0,

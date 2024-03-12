@@ -8,7 +8,7 @@ export default function ReviewFromUser() {
   return (
     <div className='h-screen overflow-hidden flex flex-col justify-center mt-20 lg:mt-0 xl:mt-0'>
         
-        <h1 className='text-3xl mb-10 font-bold text-center'>Happy Customers</h1>
+        <h1 className='text-3xl mb-10 font-bold text-center'>Happy Custo<span>m</span>ers</h1>
         <div className="flex overflow-hidden justify-center rounded-xl">
             <Swiper className='lg:h-96 h-80  flex rounded-xl'
             mousewheel={true}
