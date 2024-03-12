@@ -127,7 +127,7 @@ const Hero = () => {
           }}
           viewport={{ once: false }}
         >
-          #1 Click here
+          For verify by picture
         </motion.button>
 
         <motion.button
@@ -153,7 +153,7 @@ const Hero = () => {
           }}
           viewport={{ once: false }}
         >
-          #2 Click here!
+          For verify by hand
         </motion.button>
       </div>
 
@@ -173,25 +173,24 @@ const Hero = () => {
         >
           <div className="flex gap-5 h-96 shadow-lg">
             <img src={takeapic} className="object-cover w-full " />
-            <div className="flex flex-col gap-5 justify-center">
-              <div className="uppercase font-bold text-xl">step 1</div>
+            <div className="flex flex-col gap-5 justify-center" ref={step3Ref1}>
+              <div className="uppercase font-bold text-xl">step 3</div>
               <div className="">
                   Send us images of your items as requested via our email, such as
                   the appearance, soles or size tag, then your item pictures will
-                  get verify our professional legit cheker to tell that yor item is
+                  get verify by professional legit cheker to tell that yor item is
                   authentic or replica. 
               </div>
             </div>
           </div>
           <div className="flex gap-5 h-96 shadow-lg p-10">
             <div className="flex flex-col gap-5 justify-center">
-              <div className="uppercase font-bold text-xl">step 2</div>
+              <div className="uppercase font-bold text-xl">step 4</div>
               <div className="">
-                  We have people who has  been trained by professionals in this field to authenticate your items to check if it real or repica
-              </div>
+                Rest assured, upon successful completion, we will promptly send you the verified results and an official certificate directly to your email, ensuring a trustworthy and reliable process              </div>
             </div>
-            <img src="https://s.yimg.com/uu/api/res/1.2/_oXQtzZniALVdnHm_aRPPw--~B/Zmk9ZmlsbDtoPTU5OTt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/3e1b5d50-0ca5-11eb-bf7f-10a5b0a64bf0.cf.jpg" 
-            className="object-cover w-96 " />
+            <img src="https://i.postimg.cc/prTLQPrr/C-5.png" 
+            className="object-contain w-96 " />
           </div>
         </motion.div>
 
@@ -211,10 +210,10 @@ const Hero = () => {
            <div className="flex gap-5 h-96 shadow-lg">
             <img src="https://d1f00kj7ad54bu.cloudfront.net/Pictures/480xany//P/web/j/g/o/snkrauthentication2_885740.jpg" 
             className="object-contain w-96 " />
-            <div className="flex flex-col gap-5 justify-center">
+            <div className="flex flex-col gap-5 justify-center" ref={step3Ref1}>
               <div className="uppercase font-bold text-xl">step 3</div>
               <div className="">
-              We perform thorough checks multiple times to ensure the accuracy of your items, guaranteeing that you will receive the correct results with utmost confidence.
+                Send us your items you want to verify to our office then your items will get verify by 2 professional checkers from various companies such as Nike Addidas Chanel and more 
               </div>
             </div>
           </div>
