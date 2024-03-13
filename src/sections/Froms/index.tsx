@@ -14,23 +14,25 @@ export default function Froms() {
             <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
               Product brand
             </label>
-            <select className="p-2 w-full" name="" id="">
+      
+            <select className="p-2 w-full " name="" id="">
               {brandlogo.map((data, index) => (
-                <option className="uppercase" key={index} value="">
+                <option className="uppercase " key={index} value="">
                   {data.name}
                 </option>
               ))}
             </select>
+
           </div>
           <div className="flex w-full flex-col max-w-full p-2">
-            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
-              Series
-            </label>
             <input
-              className="p-2"
+              className="p-2 bg-transparent border-[2px]  rounded-md relative peer mt-10 focus: outline-none focus:border-green-500 transition-colors"
               type="text"
-              placeholder=" Enter product series"
+              placeholder=""
             />
+            <label className="uppercase font-bold font-second py-2 absolute w-fit ml-6 mt-11 p-0 pointer-events-none peer-focus:text-sm peer-focus:translate-y-[-19px] peer-focus:bg-[#080b0e] peer-focus:border-x-1 peer-focus:border-white peer-focus:text-center peer-focus:px-2 peer-focus:duration-200" htmlFor="">
+              Enter Product Series
+            </label>
           </div>
         </div>
       );
@@ -43,21 +45,21 @@ export default function Froms() {
             </label>
             <select className="p-2 w-full" name="" id="">
               {brandlogo.map((data, index) => (
-                <option className="uppercase" key={index} value="">
+                <option className="uppercase bg-transparent" key={index} value="">
                   {data.name}
                 </option>
               ))}
             </select>
           </div>
           <div className="flex w-full flex-col p-2">
-            <label className="font-bold font-second py-2 rounded-lg" htmlFor="">
-              Series
-            </label>
             <input
-              className="p-2"
+              className="p-2 bg-transparent border-[2px]  rounded-md relative peer mt-10 focus: outline-none focus:border-green-500 transition-colors"
               type="text"
-              placeholder=" Enter product series"
+              placeholder=""
             />
+            <label className="uppercase font-bold font-second py-2 absolute w-fit ml-6 mt-11 p-0 pointer-events-none peer-focus:text-sm peer-focus:translate-y-[-19px] peer-focus:bg-[#080b0e] peer-focus:border-x-1 peer-focus:border-white peer-focus:text-center peer-focus:px-2 peer-focus:duration-200" htmlFor="">
+              Enter product Series
+            </label>
           </div>
         </div>
       );
@@ -72,7 +74,10 @@ export default function Froms() {
       return content;
     }
   }
-  
+
+  const peertext = 0
+
+
 
   return (
     <div className=" flex flex-col justify-center p-5 ">
@@ -96,48 +101,48 @@ export default function Froms() {
         </div>
         <div className="w-full ">
           <form className="flex flex-col  p-5">
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 relative">
               <div className="flex flex-col max-w-full p-2">
-                <label
-                  className="font-bold font-second py-2 rounded-lg"
+                <input id="username" className="p-2 bg-transparent border-[2px]  rounded-md relative peer mt-5 focus: outline-none focus:border-green-500 transition-colors" type="text"  />
+                <label 
+                  className=" uppercase font-bold font-second py-2 absolute w-fit ml-6 mt-6 p-0 pointer-events-none peer-focus:text-sm peer-focus:translate-y-[-19px] peer-focus:bg-[#080b0e] peer-focus:border-x-1 peer-focus:border-white peer-focus:text-center peer-focus:px-2 peer-focus:duration-200"
                   htmlFor=""
                 >
                   Firstname
                 </label>
-                <input className="p-2" type="text" placeholder="Firstname" />
               </div>
               <div className="flex flex-col max-w-full p-2">
+                <input className="p-2 bg-transparent border-[2px]  rounded-md relative peer mt-5 focus: outline-none focus:border-green-500 transition-colors" type="text" placeholder="" />
                 <label
-                  className="font-bold font-second py-2 rounded-lg"
+                  className="uppercase font-bold font-second py-2 absolute w-fit ml-6 mt-6 p-0 pointer-events-none peer-focus:text-sm peer-focus:translate-y-[-19px] peer-focus:bg-[#080b0e] peer-focus:border-x-1 peer-focus:border-white peer-focus:text-center peer-focus:px-2 peer-focus:duration-200"
                   htmlFor=""
                 >
                   Lastname
                 </label>
-                <input className="p-2" type="text" placeholder="Lastname" />
               </div>
             </div>
             <div className="grid grid-cols-2">
               <div className="flex flex-col max-w-full p-2">
+                <input className="p-2 bg-transparent border-[2px]  rounded-md relative peer mt-5 focus: outline-none focus:border-green-500 transition-colors" type="email" placeholder="" />
                 <label
-                  className="font-bold font-second py-2 rounded-lg"
+                  className="uppercase font-bold font-second py-2 absolute w-fit ml-6 mt-6 p-0 pointer-events-none peer-focus:text-sm peer-focus:translate-y-[-19px] peer-focus:bg-[#080b0e] peer-focus:border-x-1 peer-focus:border-white peer-focus:text-center peer-focus:px-2 peer-focus:duration-200"
                   htmlFor=""
                 >
                   Email
                 </label>
-                <input className="p-2" type="email" placeholder="Enter email" />
               </div>
               <div className="flex flex-col max-w-full p-2">
+                <input
+                  className="p-2 bg-transparent border-[2px]  rounded-md relative peer mt-5 focus: outline-none focus:border-green-500 transition-colors"
+                  type="text"
+                  placeholder=""
+                />
                 <label
-                  className="font-bold font-second py-2 rounded-lg"
+                  className="uppercase font-bold font-second py-2 absolute w-fit ml-6 mt-6 p-0 pointer-events-none peer-focus:text-sm peer-focus:translate-y-[-19px] peer-focus:bg-[#080b0e] peer-focus:border-x-1 peer-focus:border-white peer-focus:text-center peer-focus:px-2 peer-focus:duration-200"
                   htmlFor=""
                 >
                   Number
                 </label>
-                <input
-                  className="p-2"
-                  type="text"
-                  placeholder=" Enter phone number"
-                />
               </div>
             </div>
             <div className="flex flex-col transition-all duration-500">
